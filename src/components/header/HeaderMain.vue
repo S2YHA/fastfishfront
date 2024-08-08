@@ -1,4 +1,3 @@
-<script setup lang="ts"></script>
 <template>
   <v-app-bar flat>
     <v-container class="mx-auto d-flex align-center justify-center">
@@ -11,11 +10,15 @@
           <v-avatar color="grey-darken-1" size="32"></v-avatar>
         </v-col>
         <v-col class="d-flex justify-end align-center" cols="5">
-          <v-btn text="PL" variant="text"></v-btn>
-          <v-btn icon="mdi-account"></v-btn>
+          <LanguageSelector />
+          <AccountMenu />
         </v-col>
       </v-row>
     </v-container>
   </v-app-bar>
 </template>
-<style lang=""></style>
+
+<script setup lang="ts">
+import LanguageSelector from './LanguageSelector.vue'
+import AccountMenu from './AccountMenu.vue'
+</script>

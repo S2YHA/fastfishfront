@@ -9,8 +9,8 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
       meta: {
-        layout: 'Main',
-      },
+        layout: 'Main'
+      }
     },
     {
       path: '/about',
@@ -20,8 +20,8 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
       meta: {
-        layout: 'Main',
-      },
+        layout: 'Main'
+      }
     },
     {
       path: '/lessons',
@@ -31,8 +31,8 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/LessonsListView.vue'),
       meta: {
-        layout: 'Main',
-      },
+        layout: 'Main'
+      }
     },
     {
       path: '/lesson/:id',
@@ -43,8 +43,20 @@ const router = createRouter({
       component: () => import('../views/LessonView.vue'),
       children: [],
       meta: {
-        layout: 'Main',
-      },
+        layout: 'Main'
+      }
+    },
+    {
+      path: '/lesson-finish',
+      name: 'lesson-finish',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/LessonFinishView.vue'),
+      children: [],
+      meta: {
+        layout: 'Main'
+      }
     }
   ]
 })

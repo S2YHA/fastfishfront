@@ -20,7 +20,6 @@ const showDialogLessonDelete = () => {
 }
 
 const deleteLesson = () => {
-  console.log('delete')
   store.hideDialog()
 }
 
@@ -32,7 +31,6 @@ const showDialogLessonEdit = () => {
 }
 
 const editLesson = () => {
-  console.log('edit')
   store.hideDialog()
 }
 </script>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HeaderMain from '@/components/HeaderMain.vue'
+import HeaderMain from '@/components/header/HeaderMain.vue'
 import BaseDialog from '@/components/base/BaseDialog.vue'
 </script>
 

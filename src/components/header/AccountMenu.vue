@@ -1,10 +1,13 @@
 <template>
-  <BaseIconMenu :icon="icon" :items="items" />
+  <BaseMenuButton :icon="icon" :items="items" />
 </template>
 
 <script setup lang="ts">
-import BaseIconMenu from '@/components/base/BaseIconMenu.vue'
+import BaseMenuButton from '@/components/base/menus/BaseMenu.vue'
 
 const icon = 'mdi-account'
-const items = [{ title: 'Profile' }, { title: 'Settings' }, { title: 'Logout' }]
+const items = [
+  { title: 'item1', icon: 'mdi-dots-vertical', link: '/item1' },
+  { title: 'item1', icon: 'mdi-dots-vertical', link: '/item1' }
+]
 </script>

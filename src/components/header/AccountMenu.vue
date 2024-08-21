@@ -1,9 +1,9 @@
 <template>
-  <BaseMenuButton :icon="icon" :items="items" />
+  <BaseIconMenu :icon="icon" :items="items" />
 </template>
 
 <script setup lang="ts">
-import BaseMenuButton from '@/components/base/menus/BaseMenu.vue'
+import BaseIconMenu from '@/components/base/menus/BaseIconMenu.vue'
 
 const icon = 'mdi-account'
 const items = [

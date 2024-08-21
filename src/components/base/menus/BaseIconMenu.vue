@@ -1,7 +1,7 @@
 <template>
   <v-menu transition="scale-transition">
     <template v-slot:activator="{ props }">
-      <v-btn v-bind="props" :icon="icon">{{ text }}</v-btn>
+      <BaseIconButton v-bind="{ ...$attrs, ...props }" :icon="icon" />
     </template>
     <v-list>
       <v-list-item v-for="item in items" :key="item.title">
@@ -14,12 +14,9 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { MenuItems } from '@/types/ui/BaseMenuButton'
+import BaseIconButton from '@/components/base/buttons/BaseIconButton.vue'
 
 defineProps({
-  text: {
-    type: String,
-    required: false
-  },
   icon: {
     type: String,
     default: 'mdi-dots-vertical'

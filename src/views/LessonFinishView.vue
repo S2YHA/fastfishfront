@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import BaseButton from '@/components/base/buttons/BaseTextButton.vue'
+import BaseButton from '@/components/base/buttons/BaseButton.vue'
 
 const lessonResultPercentage = ref(50)
 

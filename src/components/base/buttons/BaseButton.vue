@@ -1,7 +1,6 @@
 <script setup lang="ts">
 defineProps({
-  text: { type: String, default: '' },
-  variant: { type: String, default: 'flat' }
+  text: { type: String, required: false }
 })
 </script>
 

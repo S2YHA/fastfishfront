@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import BaseInput from '@/components/base/BaseInput.vue'
-import BaseButton from '@/components/base/buttons/BaseTextButton.vue'
+import BaseButton from '@/components/base/buttons/BaseButton.vue'
 
 // mock
 const words = ref([

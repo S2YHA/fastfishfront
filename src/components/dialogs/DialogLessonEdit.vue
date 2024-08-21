@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import BaseInput from '@/components/base/BaseInput.vue'
-import BaseButton from '@/components/base/buttons/BaseTextButton.vue'
+import BaseButton from '@/components/base/buttons/BaseButton.vue'
 import { useDialogStore } from '@/stores/dialogs'
 
 const props = defineProps({
